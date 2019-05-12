@@ -11,6 +11,6 @@ Construímos as seguintes aplicações:
 4. Microsserviço Order;
 5. Microsserviço Customer.
 
-Veremos, ainda, como fazer as configurações básicas para que essas aplicações trabalhem em conjunto utilizando o balanceamento de carga, trazendo resiliência, confiabilidade e coordenação aos seus microsserviços.
+Veremos, ainda, como fazer as configurações básicas para que essas aplicações trabalhem em conjunto utilizando os recursos do **Ribbon** que é um balanceador de carga do lado do cliente, que lhe dá muito mais controle sobre o comportamento de clientes HTTP e TCP.
 
 [Ir para as páginas da wiki](https://github.com/wwenceslau/eureka-zuul-ribbon/wiki/Spring-Cloud-com-Eureka,-Zuul-e-Ribbon)
