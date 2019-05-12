@@ -1,0 +1,27 @@
+server:
+  port: ${PORT:0}
+
+loadIdentifier:
+  id: ${ID:0}
+
+eureka:
+  registryFetchIntervalSeconds: 1
+  instance:
+    hostname: localhost
+    port: 8761
+    leaseRenewalIntervalInSeconds: 1
+#    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+  client:
+    registerWithEureka: true
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${eureka.instance.port}/eureka/
+  server:
+    wait-time-in-ms-when-sync-empty: 3000
+
+ribbon:
+  eureka:
+    enabled: true
+  ServerListRefreshInterval: 1000
+  ConnectTimeout: 10000
+  ReadTimeout: 30000
